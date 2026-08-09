@@ -1,0 +1,273 @@
+KOMPLETNA BAZA UCZELNI KORZYSTAJĄCYCH Z USOSWEB
+================================================================================
+Wygenerowano: 2026-06-08 | Liczba: 67
+Źródło rejestru: 2026-06-08T16:40:26.132Z
+
+Instytucja: Akademia Finansów i Biznesu Vistula
+Domena:     usosweb.vistula.edu.pl
+URL:        https://usosweb.vistula.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Łomżyńska
+Domena:     usosweb.al.edu.pl
+URL:        https://usosweb.al.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Muzyczna imienia Feliksa Nowowiejskiego w Bydgoszczy
+Domena:     usosweb.amuz.bydgoszcz.pl
+URL:        https://usosweb.amuz.bydgoszcz.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Muzyczna w Poznaniu
+Domena:     usosweb.amuz.edu.pl
+URL:        https://usosweb.amuz.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Nauk Stosowanych Angelusa Silesiusa
+Domena:     usosweb.ans.edu.pl
+URL:        https://usosweb.ans.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Nauk Stosowanych im. Stanisława Staszica w Pile
+Domena:     usosweb.ans.pila.pl
+URL:        https://usosweb.ans.pila.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Nauk Stosowanych w Elblągu
+Domena:     usosweb.ans-elblag.pl
+URL:        https://usosweb.ans-elblag.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Nauk Stosowanych w Gnieźnie
+Domena:     usosweb.ans-gniezno.edu.pl
+URL:        https://usosweb.ans-gniezno.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Nauk Stosowanych w Koninie
+Domena:     usosweb.konin.edu.pl
+URL:        https://usosweb.konin.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Nauk Stosowanych w Lesznie
+Domena:     usosweb.ansleszno.pl
+URL:        https://usosweb.ansleszno.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Sztuk Pięknych w Katowicach
+Domena:     usosweb.asp.katowice.pl
+URL:        https://usosweb.asp.katowice.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Teatralna w Warszawie
+Domena:     usosweb.at.edu.pl
+URL:        https://usosweb.at.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Wojsk Lądowych
+Domena:     usosweb.awl.edu.pl
+URL:        https://usosweb.awl.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Wychowania Fizycznego im. Bronisława Czecha w Krakowie
+Domena:     usosweb.awf.krakow.pl
+URL:        https://usosweb.awf.krakow.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu
+Domena:     usosweb.awf.poznan.pl
+URL:        https://usosweb.awf.poznan.pl
+--------------------------------------------------------------------------------
+Instytucja: Akademia Wymiaru Sprawiedliwości
+Domena:     usosweb.aws.edu.pl
+URL:        https://usosweb.aws.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: AWF Wrocław
+Domena:     usosweb.awf.wroc.pl
+URL:        https://usosweb.awf.wroc.pl
+--------------------------------------------------------------------------------
+Instytucja: Bielska Wyższa Szkoła im. J. Tyszkiewicza
+Domena:     usosweb.tyszkiewicz.edu.pl
+URL:        https://usosweb.tyszkiewicz.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Chrześcijańska Akademia Teologiczna w Warszawie
+Domena:     usosweb.chat.edu.pl
+URL:        https://usosweb.chat.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: PANS w Jarosławiu
+Domena:     usosweb.pansjar.edu.pl
+URL:        https://usosweb.pansjar.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Państwowa Akademia Nauk Stosowanych w Chełmie
+Domena:     usosweb.panschelm.edu.pl
+URL:        https://usosweb.panschelm.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Państwowa Akademia Nauk Stosowanych w Krośnie
+Domena:     usos.kpu.krosno.pl
+URL:        https://usos.kpu.krosno.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Białostocka
+Domena:     usosweb.pb.edu.pl
+URL:        https://usosweb.pb.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Bydgoska im. Jana i Jędrzeja Śniadeckich
+Domena:     usosweb.pbs.edu.pl
+URL:        https://usosweb.pbs.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Częstochowska
+Domena:     usosweb.pcz.pl
+URL:        https://usosweb.pcz.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Koszalińska
+Domena:     usosweb.tu.koszalin.pl
+URL:        https://usosweb.tu.koszalin.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Opolska
+Domena:     usosweb.po.edu.pl
+URL:        https://usosweb.po.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Poznańska
+Domena:     usosweb.put.poznan.pl
+URL:        https://usosweb.put.poznan.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Śląska
+Domena:     usosweb.polsl.pl
+URL:        https://usosweb.polsl.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Świętokrzyska
+Domena:     usosweb.tu.kielce.pl
+URL:        https://usosweb.tu.kielce.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Warszawska
+Domena:     usosweb.usos.pw.edu.pl
+URL:        https://usosweb.usos.pw.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Politechnika Wrocławska
+Domena:     web.usos.pwr.edu.pl
+URL:        https://web.usos.pwr.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Szkoła Główna Handlowa w Warszawie
+Domena:     usosweb.sgh.waw.pl
+URL:        https://usosweb.sgh.waw.pl
+--------------------------------------------------------------------------------
+Instytucja: Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej
+Domena:     usosweb.uth.edu.pl
+URL:        https://usosweb.uth.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet APS
+Domena:     usosweb.aps.edu.pl
+URL:        https://usosweb.aps.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Bielsko-Bialski
+Domena:     usosweb.ubb.edu.pl
+URL:        https://usosweb.ubb.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Ekonomiczny
+Domena:     usosweb.uek.krakow.pl
+URL:        https://usosweb.uek.krakow.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Ekonomiczny w Katowicach
+Domena:     usosweb.ue.katowice.pl
+URL:        https://usosweb.ue.katowice.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Ekonomiczny w Poznaniu
+Domena:     usosweb.ue.poznan.pl
+URL:        https://usosweb.ue.poznan.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Ekonomiczny we Wrocławiu
+Domena:     usosweb.ue.wroc.pl
+URL:        https://usosweb.ue.wroc.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Ignatianum
+Domena:     usosweb.ignatianum.edu.pl
+URL:        https://usosweb.ignatianum.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet im. Adama Mickiewicza w Poznaniu
+Domena:     usosweb.amu.edu.pl
+URL:        https://usosweb.amu.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Jagielloński
+Domena:     www.usosweb.uj.edu.pl
+URL:        https://www.usosweb.uj.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Jana Długosza w Częstochowie
+Domena:     usosweb.ujd.edu.pl
+URL:        https://usosweb.ujd.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Kardynała Stefana Wyszyńskiego
+Domena:     usosweb.uksw.edu.pl
+URL:        https://usosweb.uksw.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Kazimierza Wielkiego
+Domena:     usosweb.ukw.edu.pl
+URL:        https://usosweb.ukw.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Łódzki
+Domena:     usosweb.uni.lodz.pl
+URL:        https://usosweb.uni.lodz.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Marii Curie-Skłodowskiej
+Domena:     usosweb.umcs.pl
+URL:        https://usosweb.umcs.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Medyczny w Lublinie
+Domena:     usosweb.umlub.pl
+URL:        https://usosweb.umlub.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Medyczny we Wrocławiu
+Domena:     usosweb.umw.edu.pl
+URL:        https://usosweb.umw.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Mikołaja Kopernika
+Domena:     usosweb.umk.pl
+URL:        https://usosweb.umk.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Muzyczny Fryderyka Chopina w Warszawie
+Domena:     usosweb.chopin.edu.pl
+URL:        https://usosweb.chopin.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Opolski
+Domena:     usosweb.uni.opole.pl
+URL:        https://usosweb.uni.opole.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Papieski Jana Pawła II w Krakowie
+Domena:     usosweb.upjp2.edu.pl
+URL:        https://usosweb.upjp2.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Przyrodniczy we Wrocławiu
+Domena:     usos.upwr.edu.pl
+URL:        https://usos.upwr.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Rolniczy
+Domena:     usosweb.urk.edu.pl
+URL:        https://usosweb.urk.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Śląski w Katowicach
+Domena:     usosweb.us.edu.pl
+URL:        https://usosweb.us.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet w Białymstoku
+Domena:     usosweb.uwb.edu.pl
+URL:        https://usosweb.uwb.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet w Siedlcach
+Domena:     usosweb.uws.edu.pl
+URL:        https://usosweb.uws.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Warmińsko-Mazurski w Olsztynie
+Domena:     usosweb.uwm.edu.pl
+URL:        https://usosweb.uwm.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Warszawski
+Domena:     usosweb.uw.edu.pl
+URL:        https://usosweb.uw.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Uniwersytet Wrocławski
+Domena:     usosweb.uwr.edu.pl
+URL:        https://usosweb.uwr.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: UP Sanok
+Domena:     usosweb.up-sanok.edu.pl
+URL:        https://usosweb.up-sanok.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Wojskowa Akademia Techniczna
+Domena:     usos.wat.edu.pl
+URL:        https://usos.wat.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Wyższa Szkoła Ekonomiczna w Białymstoku
+Domena:     usosweb.wse.edu.pl
+URL:        https://usosweb.wse.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Wyższa Szkoła Gospodarki Euroregionalnej im. Alcide De Gasperi
+Domena:     usosweb.wsge.edu.pl
+URL:        https://usosweb.wsge.edu.pl
+--------------------------------------------------------------------------------
+Instytucja: Wyższa Szkoła Prawa
+Domena:     usosweb.prawowroclaw.edu.pl
+URL:        https://usosweb.prawowroclaw.edu.pl
+--------------------------------------------------------------------------------

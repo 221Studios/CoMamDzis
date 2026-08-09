@@ -1,0 +1,59 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'App.js'
+      - 'src/**'
+      - 'app.json'
+      - 'index.js'
+      - 'assets/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'scripts/build-apk.sh'
+      - 'scripts/bump-version.mjs'
+      - '.github/workflows/build-apk.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Build APK
+        run: bash scripts/build-apk.sh
+
+      - name: Commit updated APK
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -f --ignore-unmatch CDV-Plan.apk
+          git add app.json package.json package-lock.json CDV-Plan-*.apk
+          if git diff --staged --quiet; then
+            echo "APK unchanged, nothing to commit."
+          else
+            git commit -m "chore: rebuild versioned APK [skip ci]"
+            git push
+          fi

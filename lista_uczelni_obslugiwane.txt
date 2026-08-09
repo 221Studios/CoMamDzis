@@ -1,0 +1,105 @@
+CoMamDziś — obsługiwane uczelnie
+Wygenerowano: 2026-06-08
+Wersja aplikacji: 0.1.25
+Źródło: src/data/usosUniversities.js, src/schoolConfig.js
+
+Łącznie: 72 uczelni
+  - 5 integracji dedykowanych (poza rejestrem USOS)
+  - 67 uczelni USOS (w tym Wojskowa Akademia Techniczna)
+
+=== Integracje dedykowane (poza USOS) ===
+
+Collegium Da Vinci
+  Integracja: CDV (Wirtualna Uczelnia)
+  Portal:     https://wu.cdv.pl/?login=1
+  Wykrywanie: login @edu.cdv.pl lub @cdv.pl
+
+Uniwersytet WSB Merito
+  Integracja: Merito Go
+  Portal:     https://meritogo.pl/
+  Wykrywanie: domeny merito.pl / wsb.pl, krótkie loginy studenckie
+
+Wyższa Szkoła Zarządzania i Prawa (WSZiP)
+  Integracja: Moodle + PDF
+  Portal:     https://mdl.wszip.poznan.pl/
+  Wykrywanie: domeny wszip.pl, wszip.poznan.pl
+
+Politechnika Lubelska
+  Integracja: eHMS + PDF wydziału
+  Portal:     https://ehms.pollub.pl/standard/
+  Wykrywanie: login 6-cyfrowy, ehms.pollub, pollub.edu.pl
+
+Wyższa Szkoła Edukacji i Terapii (WSEIT)
+  Integracja: Wirtualny Dziekanat
+  Portal:     https://wd.wseit.pl/Logowanie
+  Wykrywanie: krótki login studencki (np. zk40), domeny wseit.pl
+
+=== Uczelnie USOS ===
+
+Akademia Finansów i Biznesu Vistula
+Akademia Łomżyńska
+Akademia Muzyczna imienia Feliksa Nowowiejskiego w Bydgoszczy
+Akademia Muzyczna w Poznaniu
+Akademia Nauk Stosowanych Angelusa Silesiusa
+Akademia Nauk Stosowanych im. Stanisława Staszica w Pile
+Akademia Nauk Stosowanych w Elblągu
+Akademia Nauk Stosowanych w Gnieźnie
+Akademia Nauk Stosowanych w Koninie
+Akademia Nauk Stosowanych w Lesznie
+Akademia Sztuk Pięknych w Katowicach
+Akademia Teatralna w Warszawie
+Akademia Wojsk Lądowych
+Akademia Wychowania Fizycznego im. Bronisława Czecha w Krakowie
+Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu
+Akademia Wymiaru Sprawiedliwości
+AWF Wrocław
+Bielska Wyższa Szkoła im. J. Tyszkiewicza
+Chrześcijańska Akademia Teologiczna w Warszawie
+PANS w Jarosławiu
+Państwowa Akademia Nauk Stosowanych w Chełmie
+Państwowa Akademia Nauk Stosowanych w Krośnie
+Politechnika Białostocka
+Politechnika Bydgoska im. Jana i Jędrzeja Śniadeckich
+Politechnika Częstochowska
+Politechnika Koszalińska
+Politechnika Opolska
+Politechnika Poznańska
+Politechnika Śląska
+Politechnika Świętokrzyska
+Politechnika Warszawska
+Politechnika Wrocławska
+Szkoła Główna Handlowa w Warszawie
+Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej
+Uniwersytet APS
+Uniwersytet Bielsko-Bialski
+Uniwersytet Ekonomiczny
+Uniwersytet Ekonomiczny w Katowicach
+Uniwersytet Ekonomiczny w Poznaniu
+Uniwersytet Ekonomiczny we Wrocławiu
+Uniwersytet Ignatianum
+Uniwersytet im. Adama Mickiewicza w Poznaniu
+Uniwersytet Jagielloński
+Uniwersytet Jana Długosza w Częstochowie
+Uniwersytet Kardynała Stefana Wyszyńskiego
+Uniwersytet Kazimierza Wielkiego
+Uniwersytet Łódzki
+Uniwersytet Marii Curie-Skłodowskiej
+Uniwersytet Medyczny w Lublinie
+Uniwersytet Medyczny we Wrocławiu
+Uniwersytet Mikołaja Kopernika
+Uniwersytet Muzyczny Fryderyka Chopina w Warszawie
+Uniwersytet Opolski
+Uniwersytet Papieski Jana Pawła II w Krakowie
+Uniwersytet Przyrodniczy we Wrocławiu
+Uniwersytet Rolniczy
+Uniwersytet Śląski w Katowicach
+Uniwersytet w Białymstoku
+Uniwersytet w Siedlcach
+Uniwersytet Warmińsko-Mazurski w Olsztynie
+Uniwersytet Warszawski
+Uniwersytet Wrocławski
+UP Sanok
+Wojskowa Akademia Techniczna
+Wyższa Szkoła Ekonomiczna w Białymstoku
+Wyższa Szkoła Gospodarki Euroregionalnej im. Alcide De Gasperi
+Wyższa Szkoła Prawa

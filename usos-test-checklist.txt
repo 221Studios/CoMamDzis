@@ -1,0 +1,701 @@
+CHECKLISTA TESTÓW LOGOWANIA USOS — CoMamDziś
+================================================================================
+Wygenerowano: 2026-06-08
+Uczelni w rejestrze aplikacji: 67
+
+CEL TESTU (ręcznie w aplikacji mobilnej):
+  1. Wpisz login testowy i hasło „test” (patrz kolumny poniżej).
+  2. Kliknij Zaloguj / synchronizuj plan.
+  3. SUKCES integracji = komunikat:
+     „USOS: system logowania uczelni odrzucił login lub hasło.”
+     (formularz znaleziony, dane wysłane, CAS/IdP odrzucił fałszywe konto)
+
+INNE WYNIKI:
+  - „nie znaleziono pól loginu i hasła” → integracja do poprawy
+  - timeout / brak połączenia → sieć lub zły URL CAS
+  - wymagany kod 2FA → uczelnia z MFA (UJ/PW/UMCS itd.) — osobna ścieżka
+
+AUTOMAT (szybszy, bez aplikacji):
+  node scripts/probe-usos-logins.mjs --submit-invalid-login
+  node scripts/probe-usos-logins-browser.mjs   # gdy CAS jest JS-only
+
+FORMAT:
+  [ ] = do sprawdzenia   [OK] = odrzuciło fałszywe dane   [FAIL] = inny błąd
+
+--------------------------------------------------------------------------------
+
+[0] 01. Akademia Finansów i Biznesu Vistula (AFBV)
+    USOSweb:      https://usosweb.vistula.edu.pl
+    Host:         usosweb.vistula.edu.pl
+    Domeny mail:  vistula.edu.pl, student.vistula.edu.pl, st.vistula.edu.pl
+    Login test:   comamdzi_probe.vistula.edu.pl@vistula.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.vistula.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.vistula.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.vistula.edu.pl
+
+[X] 02. Akademia Łomżyńska (AŁ)
+    USOSweb:      https://usosweb.al.edu.pl
+    Host:         usosweb.al.edu.pl
+    Domeny mail:  al.edu.pl, student.al.edu.pl, st.al.edu.pl
+    Login test:   comamdzi_probe.al.edu.pl@al.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.al.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.al.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.al.edu.pl
+
+[0] 03. Akademia Muzyczna imienia Feliksa Nowowiejskiego w Bydgoszczy (AMIF)
+    USOSweb:      https://usosweb.amuz.bydgoszcz.pl
+    Host:         usosweb.amuz.bydgoszcz.pl
+    Domeny mail:  amuz.bydgoszcz.pl, student.amuz.bydgoszcz.pl, st.amuz.bydgoszcz.pl
+    Login test:   comamdzi_probe.amuz.bydgoszcz.pl@amuz.bydgoszcz.pl
+    Hasło test:   test
+    CAS / start:  https://cas.amuz.bydgoszcz.pl/cas/login?service=https%3A%2F%2Fusosweb.amuz.bydgoszcz.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.amuz.bydgoszcz.pl
+
+[X] 04. Akademia Muzyczna w Poznaniu (AMP)
+    USOSweb:      https://usosweb.amuz.edu.pl
+    Host:         usosweb.amuz.edu.pl
+    Domeny mail:  amuz.edu.pl, student.amuz.edu.pl, st.amuz.edu.pl
+    Login test:   comamdzi_probe.amuz.edu.pl@amuz.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.amuz.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.amuz.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.amuz.edu.pl
+
+[0] 05. Akademia Nauk Stosowanych Angelusa Silesiusa (ANSA)
+    USOSweb:      https://usosweb.ans.edu.pl
+    Host:         usosweb.ans.edu.pl
+    Domeny mail:  ans.edu.pl, student.ans.edu.pl, st.ans.edu.pl
+    Login test:   comamdzi_probe.ans.edu.pl@ans.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ans.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.ans.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ans.edu.pl
+
+[X] 06. Akademia Nauk Stosowanych im. Stanisława Staszica w Pile (ANSI)
+    USOSweb:      https://usosweb.ans.pila.pl
+    Host:         usosweb.ans.pila.pl
+    Domeny mail:  ans.pila.pl, student.ans.pila.pl, st.ans.pila.pl
+    Login test:   comamdzi_probe.ans.pila.pl@ans.pila.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ans.pila.pl/cas/login?service=https%3A%2F%2Fusosweb.ans.pila.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ans.pila.pl
+
+[0] 07. Akademia Nauk Stosowanych w Elblągu (ANSE)
+    USOSweb:      https://usosweb.ans-elblag.pl
+    Host:         usosweb.ans-elblag.pl
+    Domeny mail:  ans-elblag.pl, student.ans-elblag.pl, st.ans-elblag.pl
+    Login test:   comamdzi_probe.ans.elblag.pl@ans-elblag.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ans-elblag.pl/cas/login?service=https%3A%2F%2Fusosweb.ans-elblag.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ans-elblag.pl
+
+[0] 08. Akademia Nauk Stosowanych w Gnieźnie (ANSG)
+    USOSweb:      https://usosweb.ans-gniezno.edu.pl
+    Host:         usosweb.ans-gniezno.edu.pl
+    Domeny mail:  ans-gniezno.edu.pl, student.ans-gniezno.edu.pl, st.ans-gniezno.edu.pl
+    Login test:   comamdzi_probe.ans.gniezno.edu.pl@ans-gniezno.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ans-gniezno.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.ans-gniezno.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ans-gniezno.edu.pl
+
+[0] 09. Akademia Nauk Stosowanych w Koninie (ANSK)
+    USOSweb:      https://usosweb.konin.edu.pl
+    Host:         usosweb.konin.edu.pl
+    Domeny mail:  konin.edu.pl, student.konin.edu.pl, st.konin.edu.pl
+    Login test:   comamdzi_probe.konin.edu.pl@konin.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.konin.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.konin.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.konin.edu.pl
+
+[X] 10. Akademia Nauk Stosowanych w Lesznie (ANSL)
+    USOSweb:      https://usosweb.ansleszno.pl
+    Host:         usosweb.ansleszno.pl
+    Domeny mail:  ansleszno.pl, student.ansleszno.pl, st.ansleszno.pl
+    Login test:   comamdzi_probe.ansleszno.pl@ansleszno.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ansleszno.pl/cas/login?service=https%3A%2F%2Fusosweb.ansleszno.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ansleszno.pl
+
+[X] 11. Akademia Sztuk Pięknych w Katowicach (ASPK)
+    USOSweb:      https://usosweb.asp.katowice.pl
+    Host:         usosweb.asp.katowice.pl
+    Domeny mail:  asp.katowice.pl, student.asp.katowice.pl, st.asp.katowice.pl
+    Login test:   comamdzi_probe.asp.katowice.pl@asp.katowice.pl
+    Hasło test:   test
+    CAS / start:  https://cas.asp.katowice.pl/cas/login?service=https%3A%2F%2Fusosweb.asp.katowice.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.asp.katowice.pl
+
+[0] 12. Akademia Teatralna w Warszawie (ATW)
+    USOSweb:      https://usosweb.at.edu.pl
+    Host:         usosweb.at.edu.pl
+    Domeny mail:  at.edu.pl, student.at.edu.pl, st.at.edu.pl
+    Login test:   comamdzi_probe.at.edu.pl@at.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.at.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.at.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.at.edu.pl
+
+[0] 13. Akademia Wojsk Lądowych (AWL)
+    USOSweb:      https://usosweb.awl.edu.pl
+    Host:         usosweb.awl.edu.pl
+    Domeny mail:  awl.edu.pl, student.awl.edu.pl, st.awl.edu.pl
+    Login test:   comamdzi_probe.awl.edu.pl@awl.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.awl.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.awl.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.awl.edu.pl
+
+[X] 14. Akademia Wychowania Fizycznego im. Bronisława Czecha w Krakowie (AWFI)
+    USOSweb:      https://usosweb.awf.krakow.pl
+    Host:         usosweb.awf.krakow.pl
+    Domeny mail:  awf.krakow.pl, student.awf.krakow.pl, st.awf.krakow.pl
+    Login test:   comamdzi_probe.awf.krakow.pl@awf.krakow.pl
+    Hasło test:   test
+    CAS / start:  https://cas.awf.krakow.pl/cas/login?service=https%3A%2F%2Fusosweb.awf.krakow.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.awf.krakow.pl
+
+[X] 15. Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu (PEA")
+    USOSweb:      https://usosweb.awf.poznan.pl
+    Host:         usosweb.awf.poznan.pl
+    Domeny mail:  awf.poznan.pl, student.awf.poznan.pl, st.awf.poznan.pl
+    Login test:   comamdzi_probe.awf.poznan.pl@awf.poznan.pl
+    Hasło test:   test
+    CAS / start:  https://cas.awf.poznan.pl/cas/login?service=https%3A%2F%2Fusosweb.awf.poznan.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.awf.poznan.pl
+
+[0] 16. Akademia Wymiaru Sprawiedliwości (AWS)
+    USOSweb:      https://usosweb.aws.edu.pl
+    Host:         usosweb.aws.edu.pl
+    Domeny mail:  aws.edu.pl, student.aws.edu.pl, st.aws.edu.pl
+    Login test:   comamdzi_probe.aws.edu.pl@aws.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.aws.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.aws.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.aws.edu.pl
+
+[0] 17. AWF Wrocław (AW)
+    USOSweb:      https://usosweb.awf.wroc.pl
+    Host:         usosweb.awf.wroc.pl
+    Domeny mail:  awf.wroc.pl, student.awf.wroc.pl, st.awf.wroc.pl
+    Login test:   comamdzi_probe.awf.wroc.pl@awf.wroc.pl
+    Hasło test:   test
+    CAS / start:  https://cas.awf.wroc.pl/cas/login?service=https%3A%2F%2Fusosweb.awf.wroc.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.awf.wroc.pl
+
+[0] 18. Bielska Wyższa Szkoła im. J. Tyszkiewicza (JTCB)
+    USOSweb:      https://usosweb.tyszkiewicz.edu.pl
+    Host:         usosweb.tyszkiewicz.edu.pl
+    Domeny mail:  tyszkiewicz.edu.pl, student.tyszkiewicz.edu.pl, st.tyszkiewicz.edu.pl
+    Login test:   comamdzi_probe.tyszkiewicz.edu.pl@tyszkiewicz.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.tyszkiewicz.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.tyszkiewicz.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.tyszkiewicz.edu.pl
+
+[0] 19. Chrześcijańska Akademia Teologiczna w Warszawie (CATW)
+    USOSweb:      https://usosweb.chat.edu.pl
+    Host:         usosweb.chat.edu.pl
+    Domeny mail:  chat.edu.pl, student.chat.edu.pl, st.chat.edu.pl
+    Login test:   comamdzi_probe.chat.edu.pl@chat.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.chat.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.chat.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.chat.edu.pl
+
+[0] 20. PANS w Jarosławiu (PJ)
+    USOSweb:      https://usosweb.pansjar.edu.pl
+    Host:         usosweb.pansjar.edu.pl
+    Domeny mail:  pansjar.edu.pl, student.pansjar.edu.pl, st.pansjar.edu.pl
+    Login test:   comamdzi_probe.pansjar.edu.pl@pansjar.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.pansjar.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.pansjar.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.pansjar.edu.pl
+
+[0] 21. Państwowa Akademia Nauk Stosowanych w Chełmie (PANS)
+    USOSweb:      https://usosweb.panschelm.edu.pl
+    Host:         usosweb.panschelm.edu.pl
+    Domeny mail:  panschelm.edu.pl, student.panschelm.edu.pl, st.panschelm.edu.pl
+    Login test:   comamdzi_probe.panschelm.edu.pl@panschelm.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.panschelm.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.panschelm.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.panschelm.edu.pl
+
+[0] 22. Państwowa Akademia Nauk Stosowanych w Krośnie (PANS)
+    USOSweb:      https://usos.kpu.krosno.pl
+    Host:         usos.kpu.krosno.pl
+    Domeny mail:  kpu.krosno.pl, student.kpu.krosno.pl, st.kpu.krosno.pl
+    Login test:   comamdzi_probe.kpu.krosno.pl@kpu.krosno.pl
+    Hasło test:   test
+    CAS / start:  https://usos.kpu.krosno.pl/kontroler.php?_action=logowaniecas/index
+    Przykł. mail: student@st.kpu.krosno.pl
+
+[0] 23. Politechnika Białostocka (PB)
+    USOSweb:      https://usosweb.pb.edu.pl
+    Host:         usosweb.pb.edu.pl
+    Domeny mail:  pb.edu.pl, student.pb.edu.pl, st.pb.edu.pl
+    Login test:   comamdzi_probe.pb.edu.pl@pb.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.pb.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.pb.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.pb.edu.pl
+
+[X] 24. Politechnika Bydgoska im. Jana i Jędrzeja Śniadeckich (PBIJ)
+    USOSweb:      https://usosweb.pbs.edu.pl
+    Host:         usosweb.pbs.edu.pl
+    Domeny mail:  pbs.edu.pl, student.pbs.edu.pl, st.pbs.edu.pl
+    Login test:   comamdzi_probe.pbs.edu.pl@pbs.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.pbs.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.pbs.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.pbs.edu.pl
+
+[0] 25. Politechnika Częstochowska (PC)
+    USOSweb:      https://usosweb.pcz.pl
+    Host:         usosweb.pcz.pl
+    Domeny mail:  pcz.pl, student.pcz.pl, st.pcz.pl
+    Login test:   comamdzi_probe.pcz.pl@pcz.pl
+    Hasło test:   test
+    CAS / start:  https://cas.pcz.pl/cas/login?service=https%3A%2F%2Fusosweb.pcz.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.pcz.pl
+
+[0] 26. Politechnika Koszalińska (PK)
+    USOSweb:      https://usosweb.tu.koszalin.pl
+    Host:         usosweb.tu.koszalin.pl
+    Domeny mail:  tu.koszalin.pl, student.tu.koszalin.pl, st.tu.koszalin.pl
+    Login test:   comamdzi_probe.tu.koszalin.pl@tu.koszalin.pl
+    Hasło test:   test
+    CAS / start:  https://cas.tu.koszalin.pl/cas/login?service=https%3A%2F%2Fusosweb.tu.koszalin.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.tu.koszalin.pl
+
+[X] 27. Politechnika Opolska (PO)
+    USOSweb:      https://usosweb.po.edu.pl
+    Host:         usosweb.po.edu.pl
+    Domeny mail:  po.edu.pl, student.po.edu.pl, st.po.edu.pl
+    Login test:   comamdzi_probe.po.edu.pl@po.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.po.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.po.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.po.edu.pl
+
+[0] 28. Politechnika Poznańska (PUT)
+    USOSweb:      https://usosweb.put.poznan.pl
+    Host:         usosweb.put.poznan.pl
+    Domeny mail:  put.poznan.pl, student.put.poznan.pl, st.put.poznan.pl
+    Login test:   comamdzi_probe.put.poznan.pl@put.poznan.pl
+    Hasło test:   test
+    CAS / start:  https://cas.put.poznan.pl/cas/login?service=https%3A%2F%2Fusosweb.put.poznan.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.put.poznan.pl
+
+[0] 29. Politechnika Śląska (PŚ)
+    USOSweb:      https://usosweb.polsl.pl
+    Host:         usosweb.polsl.pl
+    Domeny mail:  polsl.pl, student.polsl.pl, st.polsl.pl
+    Login test:   comamdzi_probe.polsl.pl@polsl.pl
+    Hasło test:   test
+    CAS / start:  https://cas.polsl.pl/cas/login?service=https%3A%2F%2Fusosweb.polsl.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.polsl.pl
+
+[X] 30. Politechnika Świętokrzyska (PŚ)
+    USOSweb:      https://usosweb.tu.kielce.pl
+    Host:         usosweb.tu.kielce.pl
+    Domeny mail:  tu.kielce.pl, student.tu.kielce.pl, st.tu.kielce.pl
+    Login test:   comamdzi_probe.tu.kielce.pl@tu.kielce.pl
+    Hasło test:   test
+    CAS / start:  https://cas.tu.kielce.pl/cas/login?service=https%3A%2F%2Fusosweb.tu.kielce.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.tu.kielce.pl
+
+[X] 31. Politechnika Warszawska (PW)
+    USOSweb:      https://usosweb.usos.pw.edu.pl
+    Host:         usosweb.usos.pw.edu.pl
+    Domeny mail:  usos.pw.edu.pl, pw.edu.pl, student.usos.pw.edu.pl, st.usos.pw.edu.pl, student.pw.edu.pl, st.pw.edu.pl
+    Login test:   comamdzi_probe.pw.edu.pl@usos.pw.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.usos.pw.edu.pl/cas/login?locale=pl&service=https%3A%2F%2Fusosweb.usos.pw.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex
+    Przykł. mail: student@st.usos.pw.edu.pl
+
+[X] 32. Politechnika Wrocławska (PWR)
+    USOSweb:      https://web.usos.pwr.edu.pl
+    Host:         web.usos.pwr.edu.pl
+    Domeny mail:  pwr.edu.pl, student.pwr.edu.pl, st.pwr.edu.pl
+    Login test:   comamdzi_probe.pwr.edu.pl@pwr.edu.pl
+    Hasło test:   test
+    CAS / start:  https://web.usos.pwr.edu.pl/kontroler.php?_action=logowaniecas/index
+    Przykł. mail: student@st.pwr.edu.pl
+
+[0] 33. Szkoła Główna Handlowa w Warszawie (SGH)
+    USOSweb:      https://usosweb.sgh.waw.pl
+    Host:         usosweb.sgh.waw.pl
+    Domeny mail:  sgh.waw.pl, student.sgh.waw.pl, st.sgh.waw.pl
+    Login test:   comamdzi_probe.sgh.waw.pl@sgh.waw.pl
+    Hasło test:   test
+    CAS / start:  https://cas.sgh.waw.pl/cas/login?service=https%3A%2F%2Fusosweb.sgh.waw.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.sgh.waw.pl
+
+[ X ] 34. Uczelnia Techniczno-Handlowa im. Heleny Chodkowskiej (UTIH)
+    USOSweb:      https://usosweb.uth.edu.pl
+    Host:         usosweb.uth.edu.pl
+    Domeny mail:  uth.edu.pl, student.uth.edu.pl, st.uth.edu.pl
+    Login test:   comamdzi_probe.uth.edu.pl@uth.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uth.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uth.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uth.edu.pl
+
+[ 0 ] 35. Uniwersytet APS (UA)
+    USOSweb:      https://usosweb.aps.edu.pl
+    Host:         usosweb.aps.edu.pl
+    Domeny mail:  aps.edu.pl, student.aps.edu.pl, st.aps.edu.pl
+    Login test:   comamdzi_probe.aps.edu.pl@aps.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.aps.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.aps.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.aps.edu.pl
+
+[ 0 ] 36. Uniwersytet Bielsko-Bialski (UB)
+    USOSweb:      https://usosweb.ubb.edu.pl
+    Host:         usosweb.ubb.edu.pl
+    Domeny mail:  ubb.edu.pl, student.ubb.edu.pl, st.ubb.edu.pl
+    Login test:   comamdzi_probe.ubb.edu.pl@ubb.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ubb.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.ubb.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ubb.edu.pl
+
+[ 0 ] 37. Uniwersytet Ekonomiczny (UE)
+    USOSweb:      https://usosweb.uek.krakow.pl
+    Host:         usosweb.uek.krakow.pl
+    Domeny mail:  uek.krakow.pl, student.uek.krakow.pl, st.uek.krakow.pl
+    Login test:   comamdzi_probe.uek.krakow.pl@uek.krakow.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uek.krakow.pl/cas/login?service=https%3A%2F%2Fusosweb.uek.krakow.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uek.krakow.pl
+
+[ X ] 38. Uniwersytet Ekonomiczny w Katowicach (UEK)
+    USOSweb:      https://usosweb.ue.katowice.pl
+    Host:         usosweb.ue.katowice.pl
+    Domeny mail:  ue.katowice.pl, student.ue.katowice.pl, st.ue.katowice.pl
+    Login test:   comamdzi_probe.ue.katowice.pl@ue.katowice.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ue.katowice.pl/cas/login?service=https%3A%2F%2Fusosweb.ue.katowice.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ue.katowice.pl
+
+[ 0 ] 39. Uniwersytet Ekonomiczny w Poznaniu (UEP)
+    USOSweb:      https://usosweb.ue.poznan.pl
+    Host:         usosweb.ue.poznan.pl
+    Domeny mail:  ue.poznan.pl, student.ue.poznan.pl, st.ue.poznan.pl
+    Login test:   comamdzi_probe.ue.poznan.pl@ue.poznan.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ue.poznan.pl/cas/login?service=https%3A%2F%2Fusosweb.ue.poznan.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ue.poznan.pl
+
+[ 0 ] 40. Uniwersytet Ekonomiczny we Wrocławiu (UEW)
+    USOSweb:      https://usosweb.ue.wroc.pl
+    Host:         usosweb.ue.wroc.pl
+    Domeny mail:  ue.wroc.pl, student.ue.wroc.pl, st.ue.wroc.pl
+    Login test:   comamdzi_probe.ue.wroc.pl@ue.wroc.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ue.wroc.pl/cas/login?service=https%3A%2F%2Fusosweb.ue.wroc.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ue.wroc.pl
+
+[ 0 ] 41. Uniwersytet Ignatianum (UI)
+    USOSweb:      https://usosweb.ignatianum.edu.pl
+    Host:         usosweb.ignatianum.edu.pl
+    Domeny mail:  ignatianum.edu.pl, student.ignatianum.edu.pl, st.ignatianum.edu.pl
+    Login test:   comamdzi_probe.ignatianum.edu.pl@ignatianum.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ignatianum.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.ignatianum.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ignatianum.edu.pl
+
+[ 0 ] 42. Uniwersytet im. Adama Mickiewicza w Poznaniu (UAM)
+    USOSweb:      https://usosweb.amu.edu.pl
+    Host:         usosweb.amu.edu.pl
+    Domeny mail:  amu.edu.pl, student.amu.edu.pl, st.amu.edu.pl
+    Login test:   comamdzi_probe.amu.edu.pl@amu.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.amu.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.amu.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.amu.edu.pl
+
+[ 0 ] 43. Uniwersytet Jagielloński (UJ)
+    USOSweb:      https://www.usosweb.uj.edu.pl
+    Host:         www.usosweb.uj.edu.pl
+    Domeny mail:  uj.edu.pl, student.uj.edu.pl, st.uj.edu.pl
+    Login test:   comamdzi_probe.uj.edu.pl@uj.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uj.edu.pl/cas/login?service=https%3A%2F%2Fwww.usosweb.uj.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uj.edu.pl
+
+[ 0 ] 44. Uniwersytet Jana Długosza w Częstochowie (UJDC)
+    USOSweb:      https://usosweb.ujd.edu.pl
+    Host:         usosweb.ujd.edu.pl
+    Domeny mail:  ujd.edu.pl, student.ujd.edu.pl, st.ujd.edu.pl
+    Login test:   comamdzi_probe.ujd.edu.pl@ujd.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ujd.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.ujd.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ujd.edu.pl
+
+[ 0 ] 45. Uniwersytet Kardynała Stefana Wyszyńskiego (UKSW)
+    USOSweb:      https://usosweb.uksw.edu.pl
+    Host:         usosweb.uksw.edu.pl
+    Domeny mail:  uksw.edu.pl, student.uksw.edu.pl, st.uksw.edu.pl
+    Login test:   comamdzi_probe.uksw.edu.pl@uksw.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uksw.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uksw.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uksw.edu.pl
+
+[ x ] 46. Uniwersytet Kazimierza Wielkiego (UKW)
+    USOSweb:      https://usosweb.ukw.edu.pl
+    Host:         usosweb.ukw.edu.pl
+    Domeny mail:  ukw.edu.pl, student.ukw.edu.pl, st.ukw.edu.pl
+    Login test:   comamdzi_probe.ukw.edu.pl@ukw.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.ukw.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.ukw.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.ukw.edu.pl
+
+[ 0 ] 47. Uniwersytet Łódzki (UŁ)
+    USOSweb:      https://usosweb.uni.lodz.pl
+    Host:         usosweb.uni.lodz.pl
+    Domeny mail:  uni.lodz.pl, student.uni.lodz.pl, st.uni.lodz.pl
+    Login test:   comamdzi_probe.uni.lodz.pl@uni.lodz.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uni.lodz.pl/cas/login?service=https%3A%2F%2Fusosweb.uni.lodz.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uni.lodz.pl
+
+[ 0 ] 48. Uniwersytet Marii Curie-Skłodowskiej (UMCS)
+    USOSweb:      https://usosweb.umcs.pl
+    Host:         usosweb.umcs.pl
+    Domeny mail:  umcs.pl, student.umcs.pl, st.umcs.pl
+    Login test:   comamdzi_probe.umcs.pl@umcs.pl
+    Hasło test:   test
+    CAS / start:  https://login.umcs.pl/login?service=https%3A%2F%2Fusosweb.umcs.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.umcs.pl
+
+[ 0 ] 49. Uniwersytet Medyczny w Lublinie (UML)
+    USOSweb:      https://usosweb.umlub.pl
+    Host:         usosweb.umlub.pl
+    Domeny mail:  umlub.pl, student.umlub.pl, st.umlub.pl
+    Login test:   comamdzi_probe.umlub.pl@umlub.pl
+    Hasło test:   test
+    CAS / start:  https://cas.umlub.pl/cas/login?service=https%3A%2F%2Fusosweb.umlub.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.umlub.pl
+
+[ 0 ] 50. Uniwersytet Medyczny we Wrocławiu (UMW)
+    USOSweb:      https://usosweb.umw.edu.pl
+    Host:         usosweb.umw.edu.pl
+    Domeny mail:  umw.edu.pl, student.umw.edu.pl, st.umw.edu.pl
+    Login test:   comamdzi_probe.umw.edu.pl@umw.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.umw.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.umw.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.umw.edu.pl
+
+[ 0 ] 51. Uniwersytet Mikołaja Kopernika (UMK)
+    USOSweb:      https://usosweb.umk.pl
+    Host:         usosweb.umk.pl
+    Domeny mail:  umk.pl, student.umk.pl, st.umk.pl
+    Login test:   comamdzi_probe.umk.pl@umk.pl
+    Hasło test:   test
+    CAS / start:  https://cas.umk.pl/cas/login?service=https%3A%2F%2Fusosweb.umk.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.umk.pl
+
+[ 0 ] 52. Uniwersytet Muzyczny Fryderyka Chopina w Warszawie (MA"C)
+    USOSweb:      https://usosweb.chopin.edu.pl
+    Host:         usosweb.chopin.edu.pl
+    Domeny mail:  chopin.edu.pl, student.chopin.edu.pl, st.chopin.edu.pl
+    Login test:   comamdzi_probe.chopin.edu.pl@chopin.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.chopin.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.chopin.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.chopin.edu.pl
+
+[ 0 ] 53. Uniwersytet Opolski (UO)
+    USOSweb:      https://usosweb.uni.opole.pl
+    Host:         usosweb.uni.opole.pl
+    Domeny mail:  uni.opole.pl, student.uni.opole.pl, st.uni.opole.pl
+    Login test:   comamdzi_probe.uni.opole.pl@uni.opole.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uni.opole.pl/cas/login?service=https%3A%2F%2Fusosweb.uni.opole.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uni.opole.pl
+
+[ 0 ] 54. Uniwersytet Papieski Jana Pawła II w Krakowie (UPJP)
+    USOSweb:      https://usosweb.upjp2.edu.pl
+    Host:         usosweb.upjp2.edu.pl
+    Domeny mail:  upjp2.edu.pl, student.upjp2.edu.pl, st.upjp2.edu.pl
+    Login test:   comamdzi_probe.upjp2.edu.pl@upjp2.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.upjp2.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.upjp2.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.upjp2.edu.pl
+
+[ 0 ] 55. Uniwersytet Przyrodniczy we Wrocławiu (UPW)
+    USOSweb:      https://usos.upwr.edu.pl
+    Host:         usos.upwr.edu.pl
+    Domeny mail:  upwr.edu.pl, student.upwr.edu.pl, st.upwr.edu.pl
+    Login test:   comamdzi_probe.upwr.edu.pl@upwr.edu.pl
+    Hasło test:   test
+    CAS / start:  https://usos.upwr.edu.pl/kontroler.php?_action=logowaniecas/index
+    Przykł. mail: student@st.upwr.edu.pl
+
+[ X ] 56. Uniwersytet Rolniczy (UR)
+    USOSweb:      https://usosweb.urk.edu.pl
+    Host:         usosweb.urk.edu.pl
+    Domeny mail:  urk.edu.pl, student.urk.edu.pl, st.urk.edu.pl
+    Login test:   comamdzi_probe.urk.edu.pl@urk.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.urk.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.urk.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.urk.edu.pl
+
+[ 0 ] 57. Uniwersytet Śląski w Katowicach (UŚ)
+    USOSweb:      https://usosweb.us.edu.pl
+    Host:         usosweb.us.edu.pl
+    Domeny mail:  us.edu.pl, student.us.edu.pl, st.us.edu.pl
+    Login test:   comamdzi_probe.us.edu.pl@us.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.us.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.us.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.us.edu.pl
+
+[ X ] 58. Uniwersytet w Białymstoku (UWB)
+    USOSweb:      https://usosweb.uwb.edu.pl
+    Host:         usosweb.uwb.edu.pl
+    Domeny mail:  uwb.edu.pl, student.uwb.edu.pl, st.uwb.edu.pl
+    Login test:   comamdzi_probe.uwb.edu.pl@uwb.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uwb.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwb.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uwb.edu.pl
+
+[ 0 ] 59. Uniwersytet w Siedlcach (US)
+    USOSweb:      https://usosweb.uws.edu.pl
+    Host:         usosweb.uws.edu.pl
+    Domeny mail:  uws.edu.pl, student.uws.edu.pl, st.uws.edu.pl
+    Login test:   comamdzi_probe.uws.edu.pl@uws.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uws.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uws.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uws.edu.pl
+
+[ 0 ] 60. Uniwersytet Warmińsko-Mazurski w Olsztynie (UWM)
+    USOSweb:      https://usosweb.uwm.edu.pl
+    Host:         usosweb.uwm.edu.pl
+    Domeny mail:  uwm.edu.pl, student.uwm.edu.pl, st.uwm.edu.pl
+    Login test:   comamdzi_probe.uwm.edu.pl@uwm.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uwm.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwm.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uwm.edu.pl
+
+[ 0 ] 61. Uniwersytet Warszawski (UW)
+    USOSweb:      https://usosweb.uw.edu.pl
+    Host:         usosweb.uw.edu.pl
+    Domeny mail:  uw.edu.pl, student.uw.edu.pl, st.uw.edu.pl
+    Login test:   comamdzi_probe.uw.edu.pl@uw.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uw.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uw.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uw.edu.pl
+
+[ 0 ] 62. Uniwersytet Wrocławski (UWr)
+    USOSweb:      https://usosweb.uwr.edu.pl
+    Host:         usosweb.uwr.edu.pl
+    Domeny mail:  uwr.edu.pl, student.uwr.edu.pl, st.uwr.edu.pl
+    Login test:   comamdzi_probe.uwr.edu.pl@uwr.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.uwr.edu.pl
+
+[ 0 ] 63. UP Sanok (S)
+    USOSweb:      https://usosweb.up-sanok.edu.pl
+    Host:         usosweb.up-sanok.edu.pl
+    Domeny mail:  up-sanok.edu.pl, student.up-sanok.edu.pl, st.up-sanok.edu.pl
+    Login test:   comamdzi_probe.up.sanok.edu.pl@up-sanok.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.up-sanok.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.up-sanok.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.up-sanok.edu.pl
+
+[ pdf ] 64. Wojskowa Akademia Techniczna (WAT)
+    USOSweb:      https://usos.wat.edu.pl
+    Host:         usos.wat.edu.pl
+    Domeny mail:  wat.edu.pl, student.wat.edu.pl, st.wat.edu.pl
+    Login test:   comamdzi_probe.wat.edu.pl@wat.edu.pl
+    Hasło test:   test
+    CAS / start:  https://usos.wat.edu.pl/kontroler.php?_action=logowaniecas/index
+    Przykł. mail: student@st.wat.edu.pl
+
+[ x ] 65. Wyższa Szkoła Ekonomiczna w Białymstoku (WSEB)
+    USOSweb:      https://usosweb.wse.edu.pl
+    Host:         usosweb.wse.edu.pl
+    Domeny mail:  wse.edu.pl, student.wse.edu.pl, st.wse.edu.pl
+    Login test:   comamdzi_probe.wse.edu.pl@wse.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.wse.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.wse.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.wse.edu.pl
+
+[ x ] 66. Wyższa Szkoła Gospodarki Euroregionalnej im. Alcide De Gasperi (WSGE)
+    USOSweb:      https://usosweb.wsge.edu.pl
+    Host:         usosweb.wsge.edu.pl
+    Domeny mail:  wsge.edu.pl, student.wsge.edu.pl, st.wsge.edu.pl
+    Login test:   comamdzi_probe.wsge.edu.pl@wsge.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.wsge.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.wsge.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.wsge.edu.pl
+
+[ x ] 67. Wyższa Szkoła Prawa (WSP)
+    USOSweb:      https://usosweb.prawowroclaw.edu.pl
+    Host:         usosweb.prawowroclaw.edu.pl
+    Domeny mail:  prawowroclaw.edu.pl, student.prawowroclaw.edu.pl, st.prawowroclaw.edu.pl
+    Login test:   comamdzi_probe.prawowroclaw.edu.pl@prawowroclaw.edu.pl
+    Hasło test:   test
+    CAS / start:  https://cas.prawowroclaw.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.prawowroclaw.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl
+    Przykł. mail: student@st.prawowroclaw.edu.pl
+
+--------------------------------------------------------------------------------
+
+SKRÓCONA LISTA DOMEN USOSWEB (67 hostów):
+
+usosweb.vistula.edu.pl      
+usosweb.al.edu.pl
+usosweb.amuz.bydgoszcz.pl
+usosweb.amuz.edu.pl
+usosweb.ans.edu.pl
+usosweb.ans.pila.pl
+usosweb.ans-elblag.pl
+usosweb.ans-gniezno.edu.pl
+usosweb.konin.edu.pl
+usosweb.ansleszno.pl
+usosweb.asp.katowice.pl
+usosweb.at.edu.pl
+usosweb.awl.edu.pl
+usosweb.awf.krakow.pl
+usosweb.awf.poznan.pl
+usosweb.aws.edu.pl
+usosweb.awf.wroc.pl
+usosweb.tyszkiewicz.edu.pl
+usosweb.chat.edu.pl
+usosweb.pansjar.edu.pl
+usosweb.panschelm.edu.pl
+usos.kpu.krosno.pl
+usosweb.pb.edu.pl
+usosweb.pbs.edu.pl
+usosweb.pcz.pl
+usosweb.tu.koszalin.pl
+usosweb.po.edu.pl
+usosweb.put.poznan.pl
+usosweb.polsl.pl
+usosweb.tu.kielce.pl
+usosweb.usos.pw.edu.pl
+web.usos.pwr.edu.pl
+usosweb.sgh.waw.pl
+usosweb.uth.edu.pl
+usosweb.aps.edu.pl
+usosweb.ubb.edu.pl
+usosweb.uek.krakow.pl
+usosweb.ue.katowice.pl
+usosweb.ue.poznan.pl
+usosweb.ue.wroc.pl
+usosweb.ignatianum.edu.pl
+usosweb.amu.edu.pl
+www.usosweb.uj.edu.pl
+usosweb.ujd.edu.pl
+usosweb.uksw.edu.pl
+usosweb.ukw.edu.pl
+usosweb.uni.lodz.pl
+usosweb.umcs.pl
+usosweb.umlub.pl
+usosweb.umw.edu.pl
+usosweb.umk.pl
+usosweb.chopin.edu.pl
+usosweb.uni.opole.pl
+usosweb.upjp2.edu.pl
+usos.upwr.edu.pl
+usosweb.urk.edu.pl
+usosweb.us.edu.pl
+usosweb.uwb.edu.pl
+usosweb.uws.edu.pl
+usosweb.uwm.edu.pl              0
+usosweb.uw.edu.pl               0
+usosweb.uwr.edu.pl              0
+usosweb.up-sanok.edu.pl         0
+usos.wat.edu.pl                 pdf 
+usosweb.wse.edu.pl              X
+usosweb.wsge.edu.pl             X
+usosweb.prawowroclaw.edu.pl     X
+

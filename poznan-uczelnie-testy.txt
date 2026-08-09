@@ -1,0 +1,55 @@
+POZNAŃ - UCZELNIE, KTÓRE JUŻ MASZ W APLIKACJI
+================================================
+Wpisuj login z hasłem testowym, np. hasło: test.
+Celem jest sprawdzenie, czy aplikacja rozpozna uczelnię, otworzy właściwe logowanie i dojdzie do błędu typu nieprawidłowy login/hasło albo nieistniejący użytkownik.
+
+1. Uniwersytet im. Adama Mickiewicza w Poznaniu (UAM / USOS)
+   Login testowy: s123456@st.amu.edu.pl (lub sam PESEL w panelu CAS)
+
+2. Politechnika Poznańska (PUT / USOSweb + eLogin)
+   Login testowy: anna.nowak@student.put.poznan.pl
+   Uwaga: PUT ma USOSweb; właściwe logowanie może przekierować przez eLogin PP, a nie przez zwykły CAS.
+
+3. Uniwersytet Ekonomiczny w Poznaniu (UEP / USOS)
+   Login testowy: 123456@student.ue.poznan.pl (lub sam numer NIU/indeksu)
+
+4. Akademia Muzyczna im. I.J. Paderewskiego w Poznaniu (USOS)
+   Login testowy: 123456 (NIU, hasło testowe: test)
+   Uwaga: uczelnia opisuje logowanie do USOS przy pomocy NIU i hasła, nie Akademus.
+
+5. Akademia Wychowania Fizycznego im. E. Piaseckiego w Poznaniu (AWF / USOS)
+   Login testowy: 12345@student.awf.poznan.pl (lub numer albumu)
+
+6. Collegium Da Vinci (CDV / Wirtualna Uczelnia)
+   Login testowy: zofia.kaminska@edu.cdv.pl
+   Alternatywnie: zofia.kaminska@cdv.pl
+
+7. Uniwersytet WSB Merito w Poznaniu (Merito Go / Extranet)
+   Login testowy: adam.lewandowski@student.merito.pl
+
+8. WSZiP / Wyższa Szkoła Zarządzania i Psychologii (Wirtualna Uczelnia / Moodle)
+   Login testowy: natalia.dabrowska@wszip.poznan.pl
+
+9. WSEIT / Wyższa Szkoła Edukacji i Terapii (Wirtualne BOS / Wirtualny Dziekanat)
+   Login testowy e-mail: tomasz.mazur@wseit.pl
+   Login testowy krótki: zk40
+
+============================================
+Uniwersytet Medyczny im. Karola Marcinkowskiego w Poznaniu (WISUS / własny system UMP)
+Uniwersytet Przyrodniczy w Poznaniu (USOSweb / Wirtualny Dziekanat PULS)
+Uniwersytet Artystyczny im. Magdaleny Abakanowicz w Poznaniu (Akademus / e-dziekanat)
+Uniwersytet SWPS - Wydział w Poznaniu (Wirtualna Uczelnia / własny)
+Wyższa Szkoła Logistyki w Poznaniu (e-dziekanat / własna e-platforma)
+Wyższa Szkoła Bezpieczeństwa w Poznaniu (Wirtualny Dziekanat)
+Wyższa Szkoła Edukacji i Terapii im. prof. Kazimiery Milanowskiej w Poznaniu (Wirtualne BOS / Wirtualny Dziekanat)
+WSHIU Akademia Nauk Stosowanych (Wirtualny Dziekanat / APR System, dawniej ProAkademia)
+Poznańska Akademia Medyczna Nauk Stosowanych im. Księcia Mieszka I (Wirtualny Dziekanat / własny)
+Wyższa Szkoła Języków Obcych im. Samuela Bogumiła Lindego w Poznaniu (Wirtualna Uczelnia / własny)
+Wyższa Szkoła Komunikacji i Zarządzania w Poznaniu (e-Szkoła + Moodle / własny)
+Wyższa Szkoła Umiejętności Społecznych im. prof. Michała Iwaszkiewicza w Poznaniu (eHMS / Kalasoft EDU)
+Wyższa Szkoła Zdrowia, Urody i Edukacji w Poznaniu (eHMS / Wirtualny Dziekanat)
+Uczelnia Biznesu i Nauk Stosowanych Varsovia - filia w Poznaniu (Wirtualna Uczelnia / własny)
+Wyższa Szkoła Uni-Terra w Poznaniu (Wirtualny Dziekanat / brak potwierdzonego USOS)
+Wyższa Szkoła Hotelarstwa i Gastronomii w Poznaniu (Wirtualny Dziekanat / własny)
+Wyższa Szkoła Handlu i Rachunkowości z siedzibą w Poznaniu (brak potwierdzonego aktywnego e-dziekanatu w powszechnym obiegu)
+Wielkopolskie Collegium Kompetencji Zintegrowanych z siedzibą w Poznaniu (w likwidacji)

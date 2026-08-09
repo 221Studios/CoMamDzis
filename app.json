@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Comamdziś",
+    "slug": "comamdzis-bgrpe8",
+    "version": "0.1.33",
+    "orientation": "portrait",
+    "icon": "./assets/app-icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "pl.cdv.plan",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "INTERNET"
+      ],
+      "versionCode": 34
+    },
+    "ios": {
+      "bundleIdentifier": "pl.cdv.plan",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": false
+        },
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "60e82e4d-eda3-4d28-a813-3f05e9999f3f"
+      }
+    },
+    "owner": "n3xus47s-organization"
+  }
+}
