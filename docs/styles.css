@@ -1,0 +1,27 @@
+:root {
+  --bg: #050505;
+  --card: #141414;
+  --text: #f4f4f5;
+  --muted: #a1a1aa;
+  --accent: #19e6e6;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Segoe UI, sans-serif;
+  line-height: 1.55;
+}
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+h1 { font-size: 2rem; margin: 0 0 8px; }
+h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+p, li { color: var(--muted); }
+a { color: var(--accent); }
+.sub { color: var(--muted); margin-bottom: 32px; }
+nav a { margin-right: 16px; }
